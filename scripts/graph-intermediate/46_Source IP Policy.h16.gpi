@@ -1,0 +1,326 @@
+set xr[0:20.9]
+set y2tics
+plot for [i=0:31] input.".h16.a0.txt" index i using 2:(1.0 / 600) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 0.298241, 2.22974) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 0.213828, 2.95409) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 0.321552, 1.63789) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 0.269532, 1.94163) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 0.305721, 1.92441) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 0.403712, 1.74216) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 0.228436, 2.64844) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 0.25768, 2.53544) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 0.380937, 2.3801) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 0.174289, 3.52863) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 0.372278, 2.07283) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 0.31446, 2.01404) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 0.425102, 2.20731) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 0.1625, 2.66667) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 0.205597, 2.80484) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 0.398639, 2.04864) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 0.299383, 1.93175) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 0.295341, 2.21777) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 0.297521, 2.01667) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 0.225119, 2.73188) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 0.328841, 1.66747) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 0.394055, 1.79755) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 0.275992, 3.52667) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 0.213125, 2.29912) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 0.325189, 2.01421) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 0.287563, 2.31833) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 0.267615, 2.35413) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 0.287861, 2.07855) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 0.44466, 1.80663) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 0.329784, 1.5313) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 0.278492, 2.42377) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 0.310455, 2.36212) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:25.3]
+set y2tics
+plot for [i=0:31] input.".h16.a1.txt" index i using 2:(1.0 / 300) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 0.47115, 2.82288) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 0.367125, 3.44115) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 0.525713, 2.00363) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 0.433954, 2.41193) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 0.573994, 2.04996) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 0.671215, 2.0957) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 0.371671, 3.25556) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 0.470012, 2.78007) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 0.593696, 3.05431) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 0.265246, 4.63721) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 0.607396, 2.5409) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 0.567164, 2.23333) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 0.727442, 2.57982) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 0.292388, 2.9641) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 0.395515, 2.91603) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 0.698574, 2.3381) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 0.489684, 2.36207) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 0.479282, 2.73326) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 0.435484, 2.75556) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 0.381042, 3.22799) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 0.567125, 1.93373) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 0.694511, 2.0398) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 0.463805, 4.19717) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 0.379165, 2.58463) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 0.557073, 2.35158) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 0.535117, 2.49167) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 0.49627, 2.53894) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 0.501056, 2.38829) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 0.765543, 2.09873) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 0.608446, 1.65997) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 0.582734, 2.31667) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 0.548442, 2.67424) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:38.5]
+set y2tics
+plot for [i=0:31] input.".h16.a2.txt" index i using 2:(1.0 / 150) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 0.787543, 3.37759) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 0.670878, 3.76621) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 0.833912, 2.52624) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 0.814816, 2.56909) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 1.0674, 2.20474) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 1.21546, 2.31463) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 0.557208, 4.34309) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 0.895812, 2.91728) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 0.78693, 4.60863) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 0.397563, 6.1877) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 1.09438, 2.82046) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 0.869356, 2.91404) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 1.1205, 3.34969) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 0.49021, 3.5359) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 0.774941, 2.97657) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 1.14225, 2.85986) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 0.851904, 2.71549) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 0.760829, 3.44361) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 0.595041, 4.03333) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 0.734857, 3.34759) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 0.911818, 2.40545) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 1.37331, 2.06314) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 0.80964, 4.80872) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 0.766521, 2.55701) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 1.03656, 2.52758) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 0.912201, 2.92333) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 0.860146, 2.92974) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 0.897069, 2.66795) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 1.2809, 2.50866) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 1.09113, 1.85129) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 1.02628, 2.63086) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 1.1, 2.66667) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:56.1]
+set y2tics
+plot for [i=0:31] input.".h16.a3.txt" index i using 2:(1.0 / 75) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 1.45756, 3.64992) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 1.11105, 4.54825) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 1.39475, 3.02084) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 1.42988, 2.92798) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 1.85111, 2.54263) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 2.15948, 2.60556) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 1.03343, 4.68342) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 1.48775, 3.51313) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 1.05781, 6.85696) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 0.553244, 8.89301) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 1.97291, 3.12904) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 1.90501, 2.65965) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 1.88273, 3.98712) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 0.938237, 3.69487) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 1.48653, 3.10343) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 2.03044, 3.21769) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 1.3186, 3.50878) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 1.17832, 4.44702) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 0.99654, 4.81667) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 1.09795, 4.48108) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 1.78663, 2.45528) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 2.11505, 2.67922) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 1.58304, 4.91881) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 1.40286, 2.79429) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 1.8294, 2.86433) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 1.62025, 3.29167) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 1.65536, 3.04466) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 1.3419, 3.56709) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 2.22797, 2.88454) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 1.88072, 2.14812) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 1.63453, 3.3037) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 1.85886, 3.15606) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:81.4]
+set y2tics
+plot for [i=0:31] input.".h16.a4.txt" index i using 2:(1.0 / 38) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 2.44785, 4.28947) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 1.79405, 5.5593) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 2.87438, 2.89307) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 2.71584, 3.04257) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 2.80316, 3.31393) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 3.43182, 3.23597) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 1.96199, 4.86886) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 2.61868, 3.93931) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 1.26462, 11.3202) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 1.19129, 8.15126) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 3.34257, 3.64516) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 2.79001, 3.58421) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 2.27549, 6.51103) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 2.3012, 2.97328) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 2.54563, 3.57682) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 2.85181, 4.52159) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 2.61367, 3.49378) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 1.63457, 6.32711) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 1.22264, 7.74854) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 2.23695, 4.34096) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 2.88143, 3.00472) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 3.45014, 3.24167) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 2.77453, 5.53911) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 2.88158, 2.68493) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 3.41392, 3.0294) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 2.53727, 4.14868) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 2.40432, 4.13729) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 2.59021, 3.64734) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 4.22162, 3.00459) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 3.41742, 2.33325) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 2.79463, 3.81371) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 3.55464, 3.25742) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:125.4]
+set y2tics
+plot for [i=0:31] input.".h16.a5.txt" index i using 2:(1.0 / 19) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 3.86485, 5.43358) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 3.02288, 6.59881) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 5.74744, 2.89374) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 5.08384, 3.25075) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 6.60705, 2.81199) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 5.77445, 3.84635) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 2.44906, 7.80107) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 5.92748, 3.48067) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 1.55656, 18.3942) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 2.27603, 8.53288) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 4.76376, 5.11538) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 6.2603, 3.19474) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 2.86917, 10.3276) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 3.45391, 3.96194) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 3.92049, 4.64497) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 4.36482, 5.90849) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 4.59331, 3.97604) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 2.44986, 8.44302) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 2.06015, 9.19708) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 3.30761, 5.87163) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 4.43647, 3.90306) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 5.81648, 3.8457) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 3.81785, 8.05083) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 5.03941, 3.07053) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 9.8879, 2.09187) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 7.67681, 2.74237) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 4.7663, 4.17405) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 4.48688, 4.21111) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 6.14939, 4.12535) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 8.06757, 1.97672) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 8.25241, 2.58298) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 5.60315, 4.13301) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:180.4]
+set y2tics
+plot for [i=0:31] input.".h16.a6.txt" index i using 2:(1.0 / 10) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 6.06503, 6.5787) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 4.26121, 8.8942) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 6.193, 5.10253) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 8.92756, 3.5172) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 9.49691, 3.717) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 5.94485, 7.09858) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 4.80891, 7.54848) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 5.68789, 6.89184) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 1.73688, 31.3206) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 3.14976, 11.7152) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 6.04862, 7.65464) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 10, 3.8) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 3.93355, 14.3128) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 8.10552, 3.20769) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 7.53689, 4.59075) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 5.64675, 8.67755) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 6.4872, 5.34899) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 2.51623, 15.6186) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 3.15022, 11.4278) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 3.57481, 10.3222) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 5.11318, 6.43435) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 7.87209, 5.39882) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 4.06677, 14.3603) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 9.31021, 3.15782) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 9.92539, 3.95954) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 10.4031, 3.845) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 12.4507, 3.03598) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 6.24756, 5.74624) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 6.15983, 7.8249) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 12.4386, 2.43597) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 18.2554, 2.21852) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 10.1468, 4.33636) linecolor 31 linetype 1 with lines notitle
+
+set xr[0:264]
+set y2tics
+plot for [i=0:31] input.".h16.a7.txt" index i using 2:(1.0 / 5) smooth frequency linecolor i with points notitle axes x1y2, \
+ f(x, 9.36807, 8.5183) linecolor 0 linetype 1 with lines notitle, \
+ f(x, 12.6623, 5.98628) linecolor 1 linetype 1 with lines notitle, \
+ f(x, 7.67297, 8.23671) linecolor 2 linetype 1 with lines notitle, \
+ f(x, 22.1863, 2.83057) linecolor 3 linetype 1 with lines notitle, \
+ f(x, 15.6034, 4.52465) linecolor 4 linetype 1 with lines notitle, \
+ f(x, 8.08517, 10.4389) linecolor 5 linetype 1 with lines notitle, \
+ f(x, 7.27764, 9.97576) linecolor 6 linetype 1 with lines notitle, \
+ f(x, 9.25352, 8.47245) linecolor 7 linetype 1 with lines notitle, \
+ f(x, 2.54341, 42.7772) linecolor 8 linetype 2 with lines notitle, \
+ f(x, 6.47954, 11.3897) linecolor 9 linetype 2 with lines notitle, \
+ f(x, 9.43692, 9.81253) linecolor 10 linetype 1 with lines notitle, \
+ f(x, 17.8713, 4.25263) linecolor 11 linetype 1 with lines notitle, \
+ f(x, 5.34283, 21.075) linecolor 12 linetype 2 with lines notitle, \
+ f(x, 109.032, 0.476923) linecolor 13 linetype 2 with lines notitle, \
+ f(x, 17.2154, 4.01965) linecolor 14 linetype 1 with lines notitle, \
+ f(x, 7.60532, 12.8857) linecolor 15 linetype 1 with lines notitle, \
+ f(x, 7.51335, 9.23689) linecolor 16 linetype 1 with lines notitle, \
+ f(x, 4.7823, 16.4356) linecolor 17 linetype 1 with lines notitle, \
+ f(x, 4.50626, 15.9778) linecolor 18 linetype 2 with lines notitle, \
+ f(x, 9.142, 8.07263) linecolor 19 linetype 1 with lines notitle, \
+ f(x, 7.26255, 9.06018) linecolor 20 linetype 1 with lines notitle, \
+ f(x, 13.1651, 6.45647) linecolor 21 linetype 2 with lines notitle, \
+ f(x, 6.32827, 18.4568) linecolor 22 linetype 2 with lines notitle, \
+ f(x, 28.6782, 2.05034) linecolor 23 linetype 2 with lines notitle, \
+ f(x, 16.8502, 4.66463) linecolor 24 linetype 2 with lines notitle, \
+ f(x, 28.021, 2.855) linecolor 25 linetype 1 with lines notitle, \
+ f(x, 157.709, 0.479365) linecolor 26 linetype 2 with lines notitle, \
+ f(x, 13.8522, 5.18329) linecolor 27 linetype 1 with lines notitle, \
+ f(x, 8.13289, 11.8531) linecolor 28 linetype 2 with lines notitle, \
+ f(x, 23.2663, 2.60462) linecolor 29 linetype 2 with lines notitle, \
+ f(x, 63.5756, 1.27407) linecolor 30 linetype 2 with lines notitle, \
+ f(x, 13.8781, 6.34091) linecolor 31 linetype 1 with lines notitle
+
+set autoscale x
+unset y2tics
+plot \
+ 1.2 linecolor 0 linetype 3 with lines notitle, \
+ -1.2 linecolor 0 linetype 3 with lines notitle, \
+ input.".h16.d.txt" index 0 linecolor 0 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 1 linecolor 1 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 2 linecolor 2 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 3 linecolor 3 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 4 linecolor 4 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 5 linecolor 5 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 6 linecolor 6 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 7 linecolor 7 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 8 linecolor 8 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 9 linecolor 9 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 10 linecolor 10 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 11 linecolor 11 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 12 linecolor 12 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 13 linecolor 13 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 14 linecolor 14 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 15 linecolor 15 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 16 linecolor 16 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 17 linecolor 17 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 18 linecolor 18 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 19 linecolor 19 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 20 linecolor 20 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 21 linecolor 21 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 22 linecolor 22 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 23 linecolor 23 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 24 linecolor 24 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 25 linecolor 25 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 26 linecolor 26 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 27 linecolor 27 linetype 1 with lines notitle, \
+ input.".h16.d.txt" index 28 linecolor 28 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 29 linecolor 29 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 30 linecolor 30 linetype 2 with lines notitle, \
+ input.".h16.d.txt" index 31 linecolor 31 linetype 1 with lines notitle
+

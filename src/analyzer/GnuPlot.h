@@ -342,7 +342,7 @@ void AnomalyPlotter<Identifier>::plot( ::std::ostream &out,
 	out << "set terminal pngcairo size 1024,768\n"
 	    << "set output '" << pngFilename << "'\n"
 	        << "set ylabel 'Queries per second'\n"
-	        << "set xlabel 'Time'\n"
+	        << "set xlabel 'Time UTC+0'\n"
 	        << "set xdata time\nset timefmt \"%s\"\n";
 	if ( logscale ) {
 		out << "set log y\n";
