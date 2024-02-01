@@ -18,6 +18,9 @@ SKETCHCNT=32
 GRAPH_ANOMALY="~/source-code/dns-detect-flow-anomaly/scripts/graph-anomaly"
 GRAPH_INTERMEDIATE="~/source-code/dns-detect-flow-anomaly/scripts/graph-intermediate"
 
+#dnsanalyzer -w 600  -i 600 -a 8 -p "both" -t 1.2 -P "srcIP" -c 25 -s 32 -g "/home/thanh/source-code/dns-anomaly-injection/dnsFloodNXDOMAIN/output"   > test_parse.txt                           #-G ${GRAPH_INTERMEDIAT>
+
+
 if [ "x$1" = "x${REPLY}" ]; then
 	POLICY="dstIP"
 	ADDITIONAL="-r"
