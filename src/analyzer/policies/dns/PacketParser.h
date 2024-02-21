@@ -16,6 +16,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+// NOTICE: this is a modified version of https://github.com/SIDN/entrada
+// modified 2017-08-18 by Pieter Robberechts in context of implementing QLAD system at DNS Belgium
+// use SLD instead of full qname as hash key
+
 #pragma once
 
 #ifdef HAVE_CONFIG_H
@@ -75,12 +79,40 @@ public:
 			mName.clear();
 		}
 
-		return mName;
+		return getSLD(mName);
 	}
 
 	enum {
 		MAXDNAME = 256 /*!< @brief Max name length (RFC 883) */
 	};
+
+  ::std::string getSLD(::std::string mName) {
+    std::string hostName = mName;
+    std::string serverDomainStr;
+    int cpos = hostName.rfind(".");
+    if(cpos != std::string::npos) {
+      serverDomainStr = hostName.substr(0, cpos);
+    } else {
+      serverDomainStr = hostName.substr(0);
+    }
+
+    int pcpos = serverDomainStr.rfind(".");
+    if(pcpos != std::string::npos) {
+      serverDomainStr = hostName.substr(0, pcpos);
+    } else {
+      serverDomainStr = hostName.substr(0);
+    }
+
+    int ppcpos = serverDomainStr.rfind(".");
+    if(ppcpos != std::string::npos) {
+      serverDomainStr = hostName.substr(0, ppcpos);
+    } else {
+      serverDomainStr = hostName.substr(0);
+    }
+
+    hostName = hostName.substr(ppcpos+1);
+    return hostName;
+  }
 
 private:
 	const unsigned char *mSnapend; /*!< @brief Ptr to end of packet. */

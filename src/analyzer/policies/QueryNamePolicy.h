@@ -16,6 +16,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+// NOTICE: this is a modified version of https://github.com/SIDN/entrada
+// modified 2017-08-18 by Pieter Robberechts in context of implementing QLAD system at DNS Belgium
+// use SLD instead of full qname as hash key
+
 #pragma once
 
 #ifdef HAVE_CONFIG_H
@@ -42,7 +46,7 @@ struct QueryNamePolicy
 	 * @brief Parses packet for a query name.
 	 * @param data Packet data
 	 * @param size Packet size
-	 * @return First query name present in the packet, empty string if
+	 * @return SLD of the first query name present in the packet, empty string if
 	 * none can be parsed.
 	 */
 	static id_t parseIdentifier( const char *data, const size_t size );
