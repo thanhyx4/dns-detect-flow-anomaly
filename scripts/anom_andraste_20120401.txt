@@ -1,1 +1,4 @@
-#mergecap ~/Downloads/day27_28/tempdata/dns-hdns-01_2024-01-28_17_59.* -w - | dnsanalyzer -w 600 -i 600 -a 8 -p both -t 1.2 -P qname -c 25 -s 32 -g  -G   
+#mergecap ~/Downloads/day27_28/tempdata/dns-hdns-01_2024-01-28_17_59.* -w - | dnsanalyzer -w 600 -i 600 -a 8 -p both -t 1.2 -P qname -c 25 -s 32 -g ~/source-code/dns-detect-flow-anomaly/scripts/graph-anomaly
+From: Sun Jan 28 17:54:18 2024
+To: Sun Jan 28 18:04:17 2024
+	found anomalies (6 / 32) : i-speed.vn., in-addr.arpa., ip6.arpa., net.vn., speedtest.vn., vnnic.vn.

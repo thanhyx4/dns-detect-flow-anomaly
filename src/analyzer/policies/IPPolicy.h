@@ -41,6 +41,7 @@ typedef IPv4Address IPAddress;   /*!< @brief IPv4 address type */
  */
 struct SrcIPPolicy
 {
+    //static const int CODE;
 	static const char *NAME; /*!< @brief Human readable name of the policy */
 	typedef IPAddress id_t;  /*!< @brief Identified by IP address          */
 
@@ -61,8 +62,23 @@ struct SrcIPPolicy
 	 */
 	static unsigned hash( const unsigned index, const id_t &identifier );
 
-	static bool isValid( const id_t & )
-		{ return true; }
+	static bool isValid( const IPAddress &iden )
+		{
+		uint32_t tmp1 = 3413592400;
+		uint8_t tmp2 = 0;
+		switch (iden.mFamily) {
+		    case IPAddress::IPv4: {
+			    if(tmp1 != iden.mIPv4Address){return true;
+		        }else{return false;}
+		    }
+		    case IPAddress::IPv6: {
+		        return true;
+//                if(tmp2 != iden.mIPv6Address){return true;      //use memcmp in ipaddress.cpp
+//		        }else{return false;}
+		    }
+
+		}
+		}
 };
 
 /*!
@@ -77,6 +93,7 @@ struct SrcIPPolicy
  */
 struct DstIPPolicy
 {
+    //static const int CODE;
 	static const char *NAME;   /*!< @brief Human readable name of the policy */
 	typedef IPAddress id_t;    /*!< @brief Identified by IP address          */
 

@@ -38,6 +38,9 @@ typedef struct ip6_hdr ip6_header;
 
 const char *SrcIPPolicy::NAME = "Source IP Policy";
 const char *DstIPPolicy::NAME = "Destination IP Policy";
+//const int SrcIPPolicy::CODE = 0;
+//const int DstIPPolicy::CODE = 1;
+
 
 template<typename T>
 inline unsigned hash_wrapper( const unsigned index, const T &id )

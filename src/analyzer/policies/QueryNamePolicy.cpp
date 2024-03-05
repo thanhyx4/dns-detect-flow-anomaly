@@ -27,6 +27,7 @@
 #include "hash/UniversalVectorHash.h"
 
 const char *QueryNamePolicy::NAME = "Query Name Policy";
+//const int QueryNamePolicy::CODE = 2;
 
 QueryNamePolicy::id_t
 QueryNamePolicy::parseIdentifier( const char *data, const size_t length )

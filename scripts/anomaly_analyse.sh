@@ -15,11 +15,11 @@ THRESH=1.2
 HASHCNT=25
 SKETCHCNT=32
 
-#GRAPH_ANOMALY="~/source-code/dns-detect-flow-anomaly/scripts/graph-anomaly"
+GRAPH_ANOMALY="~/source-code/dns-detect-flow-anomaly/scripts/graph-anomaly"
 #GRAPH_INTERMEDIATE="~/source-code/dns-detect-flow-anomaly/scripts/graph-intermediate"
 
 #dnsanalyzer -w 600  -i 600 -a 8 -p "both" -t 1.2 -P "srcIP" -c 25 -s 32 -g "/home/thanh/source-code/dns-anomaly-injection/dnsFloodNXDOMAIN/output"   > test_parse.txt                           #-G ${GRAPH_INTERMEDIAT>
-
+#srcIP, dstIP, qname
 
 if [ "x$1" = "x${REPLY}" ]; then
 	POLICY="srcIP"
@@ -29,14 +29,14 @@ if [ "x$1" = "x${REPLY}" ]; then
 	sh -c "${COMMAND}"
 	echo ok
 else if [ "x$1" = "x${QUERY}" ]; then
-	POLICY="srcIP"
+	POLICY="dstIP"
 	ADDITIONAL="-q"
 	COMMAND="mergecap $2 -w - | dnsanalyzer -w ${WINDOW} -i ${INTERVAL} -a ${AGGREG} -p ${GAMMAPAR} -t ${THRESH} -P ${POLICY} -c ${HASHCNT} -s ${SKETCHCNT} ${ADDITIONAL} -g ${GRAPH_ANOMALY} -G ${GRAPH_INTERMEDIATE}"
 	echo "#${COMMAND}"
 	sh -c "${COMMAND}"
 else if [ "x$1" = "x${WHOLE}" ]; then
 	POLICY="qname"
-	COMMAND="mergecap $2 -w - | dnsanalyzer -w ${WINDOW} -i ${INTERVAL} -a ${AGGREG} -p ${GAMMAPAR} -t ${THRESH} -P ${POLICY} -c ${HASHCNT} -s ${SKETCHCNT} -g ${GRAPH_ANOMALY} -G ${GRAPH_INTERMEDIATE}  "
+	COMMAND="mergecap $2 -w - | dnsanalyzer -w ${WINDOW} -i ${INTERVAL} -a ${AGGREG} -p ${GAMMAPAR} -t ${THRESH} -P ${POLICY} -c ${HASHCNT} -s ${SKETCHCNT} -g ${GRAPH_ANOMALY}" # -G ${GRAPH_INTERMEDIATE}  "
 	echo "#${COMMAND}"
 	sh -c "${COMMAND}"
 else

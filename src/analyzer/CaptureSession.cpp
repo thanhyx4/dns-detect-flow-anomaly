@@ -120,3 +120,4 @@ void CaptureSession::capture( u_char *arg, const pcap_pkthdr *header,
 	if ( header->ts.tv_sec < start_time ) return;
 	params->storage->addPacket( data, header->ts.tv_sec );
 }
+

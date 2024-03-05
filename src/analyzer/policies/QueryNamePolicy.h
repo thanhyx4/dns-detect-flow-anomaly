@@ -39,6 +39,7 @@
  */
 struct QueryNamePolicy
 {
+    //static const int CODE;
 	static const char *NAME; /*!< @brief Human readable name of the policy */
 	typedef ::std::string id_t; /*!< @brief Identified by a query name */
 

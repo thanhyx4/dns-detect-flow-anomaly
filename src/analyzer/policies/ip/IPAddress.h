@@ -111,12 +111,13 @@ public:
 	 */
 	unsigned hash( unsigned index = 0 ) const;
 
-protected:
 	AddressFamily mFamily; /*!< @brief Type of the stored address. */
-	union {
+   	union {
 		IPv4Address mIPv4Address; /*!< @brief The IPv4 address, if used */
 		IPv6Address mIPv6Address; /*!< @brief The IPv6 address, if used */
 	};
+protected:
+
 
 	friend ::std::ostream & operator << (
 	  ::std::ostream &stream, const IPAddress &address );

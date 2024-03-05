@@ -102,6 +102,9 @@ bool operator == ( const IPAddress &left, const IPAddress &right )
 	}
 }
 /* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
 unsigned IPAddress::hash( unsigned index ) const
 {
 	switch (mFamily) {

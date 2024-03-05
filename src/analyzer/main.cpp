@@ -327,5 +327,4 @@ void analyseWithQueryNamePolicy( const Settings &opt )
 		delete detectors.front();
 		detectors.pop_front();
 	}
-
 }

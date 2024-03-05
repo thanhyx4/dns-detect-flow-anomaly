@@ -17,6 +17,7 @@ AH_BOTTOM([#endif /* _CONFIG_H_ */])
 # Default flags
 CFLAGS="-Wall -Wextra -pedantic -std=gnu99 -Wno-variadic-macros -fno-common"
 CXXFLAGS="-Wall -Wextra -pedantic -Wno-variadic-macros -fno-exceptions -fno-rtti -fno-common"
+#CXXFLAGS="-Wall -Wextra -pedantic -Wno-variadic-macros -fno-exceptions"
 LDFLAGS="-Wl,--as-needed -Wl,--warn-common"
 
 

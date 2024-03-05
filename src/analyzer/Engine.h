@@ -283,11 +283,16 @@ void Engine<POLICY>::process()
 template<typename POLICY>
 void Engine<POLICY>::hash()
 {
+    uint32_t tmp = 3413592400;
 	typename Source::const_iterator it = mSource.begin();
 	for (; it != mSource.end(); ++it) {
-		const unsigned index =
-		  POLICY::hash( mHashIndex, it->first ) % mSketches.size();
-		mSketches[index].sketch.addFlow( it->first, it->second );
+//        if((POLICY::CODE) == 0){
+//                if(it->first == tmp)                               //<< auto convert from uint32_t to IPv4
+//                    ::std::cout << it -> first;
+                const unsigned index =
+                  POLICY::hash( mHashIndex, it->first ) % mSketches.size();
+                mSketches[index].sketch.addFlow( it->first, it->second );
+
 	}
 
 	for (typename SketchList::const_iterator it = mSketches.begin();
@@ -295,16 +300,17 @@ void Engine<POLICY>::hash()
 
 		/*
 		 * The following !.empty() assert will fail:
-		 *   1) if not enough packets captured
+		 *   1) if not enough packets captured      #not enough id (srcIP of response, dstIP of query)
 		 *   2) if analysing unordered sequence 
 		 *        (which falls back to point 1 - because of generating
 		 *         empty time-windows)
 		 */
 		//assert( !it->sketch.identifiers().empty() );
 		if ( it->sketch.identifiers().empty() ) {
+
 			::std::cerr << "failed to fill all sketches, "
 			  "aborting\n";
-			exit(1);
+			//exit(1);
 #ifdef DEBUG
 			GlobalLog.logAnalyzerDebug(
 			  "generated empty sketch while hashing\n");
@@ -452,3 +458,4 @@ template<typename POLICY>
 	}
 	return stream;
 }
+
